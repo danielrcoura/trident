@@ -7,6 +7,7 @@ pipeline {
         stage('build') {
             steps {
                 echo '----- building... -----'
+                sh 'go install'
                 sh 'go build'
             }
         }
